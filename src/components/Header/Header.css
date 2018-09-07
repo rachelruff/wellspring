@@ -11,12 +11,31 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
+  padding: 5rem;
   box-sizing: border-box; }
 
-.header-container--logo {
-  width: 3em;
-  background-color: #55c57a; }
+.header {
+  height: auto;
+  width: 100vw;
+  position: relative; }
+
+.header__logo-box {
+  position: absolute; }
+
+.header__logo {
+  height: 6rem; }
+
+.header--nav {
+  list-style: none;
+  float: right; }
+  .header--nav li {
+    display: inline-block;
+    margin-right: 9rem;
+    font-size: 1.5rem; }
+    .header--nav li:last-child {
+      margin: 0; }
+    .header--nav li a:link {
+      text-decoration: none;
+      text-transform: uppercase; }

@@ -1,6 +1,36 @@
 @import '../../App.scss';
-
-.header-container--logo {
-    width: 3em;
-    background-color: $color-primary
+  
+.header {
+  height: auto;
+  width: 100vw;
+  position: relative;
 }
+
+.header__logo-box {
+  position: absolute;
+}
+
+.header__logo {
+  height: 6rem;
+  
+}
+
+
+.header--nav {
+    list-style: none;
+    float: right;
+  
+    li {
+      display: inline-block;
+      margin-right: 9rem;
+      font-size: 1.5rem;
+  
+      &:last-child {
+        margin: 0;
+      }
+      a:link {
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
