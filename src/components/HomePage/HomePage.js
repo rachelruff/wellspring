@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import axios from "axios";
+import {Link} from 'react-router-dom';
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -14,21 +15,21 @@ export default class HomePage extends Component {
       tech: []
     };
   }
-  componentDidMount() {
-    axios
-      .get("/api/articles")
-      .then(response =>
-        this.setState({
-          ent: response.data.ent,
-          gen: response.data.gen,
-          health: response.data.health,
-          sci: response.data.sci,
-          sports: response.data.sports,
-          tech: response.data.tech
-        })
-      )
-      .catch((err => console.log(err)));
-  }
+  // componentDidMount() {
+  //   axios
+  //     .get("/api/articles")
+  //     .then(response =>
+  //       this.setState({
+  //         ent: response.data.ent,
+  //         gen: response.data.gen,
+  //         health: response.data.health,
+  //         sci: response.data.sci,
+  //         sports: response.data.sports,
+  //         tech: response.data.tech
+  //       })
+  //     )
+  //     .catch((err => console.log(err)));
+  // }
 
   render() {
     // console.log(this.data.ent)
@@ -37,6 +38,7 @@ export default class HomePage extends Component {
         
       <div className="category-container">
       Home
+      <Link to='/test'>Click</Link>
       </div>
     );
   }
