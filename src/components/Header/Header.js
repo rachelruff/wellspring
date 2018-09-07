@@ -1,8 +1,11 @@
 import React from 'react';
+import logo from '../assets/logo.png';
+import './Header.css'
 
 const Header = props => {
     return (
         <div className='header-container'>
+        <img className='header-container--logo' src={logo} alt='wellspring realty'/>
             <ul>
                 <li>
                     Home
