@@ -1,0 +1,33 @@
+[debug] [2018-11-01T20:08:53.509Z] ----------------------------------------------------------------------
+[debug] [2018-11-01T20:08:53.512Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-11-01T20:08:53.512Z] CLI Version:   6.0.1
+[debug] [2018-11-01T20:08:53.512Z] Platform:      darwin
+[debug] [2018-11-01T20:08:53.512Z] Node Version:  v8.11.3
+[debug] [2018-11-01T20:08:53.513Z] Time:          Thu Nov 01 2018 14:08:53 GMT-0600 (MDT)
+[debug] [2018-11-01T20:08:53.513Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-01T20:08:53.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-01T20:08:53.523Z] > authorizing via signed-in user
+[debug] [2018-11-01T20:08:53.523Z] [iam] checking project wellspring-realty for permissions ["firebase.projects.get"]
+[debug] [2018-11-01T20:08:53.524Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wellspring-realty:testIamPermissions  
+
+[debug] [2018-11-01T20:08:53.894Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T20:08:53.895Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/wellspring-realty  
+ 
+[debug] [2018-11-01T20:08:54.250Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/rruff/developer/personal/wellspring'...
+[info] 
+[debug] [2018-11-01T20:08:55.139Z] Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
+    at Object.fs.mkdirSync (fs.js:885:18)
+    at Object.assertLogsPath (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
+    at new Controller (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/functionsEmulator.js:102:23)
+    at Object.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:7:33)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:18:23
+    at arrayMap (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9556:14)
+    at _serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:16:26)
+    at Command._action (/usr/local/lib/node_modules/firebase-tools/lib/commands/serve.js:58:12)
+[error] 
+[error] Error: An unexpected error has occurred.

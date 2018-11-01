@@ -10,8 +10,8 @@ const Header = props => {
       </div>
       <ul className="header--nav">
         <li>Home</li>
-        <li>Featured Properties</li>
-        <li>About us</li>
+        <li>Featured Propertiesss</li>
+        <li>About ussss</li>
         <li>Contact</li>
         <li>Charities</li>
       </ul>
